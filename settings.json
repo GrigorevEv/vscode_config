@@ -1,0 +1,147 @@
+{
+  "workbench.startupEditor": "none",
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "editor.renderWhitespace": "none",
+  "editor.rulers": [79],
+  "editor.renderLineHighlightOnlyWhenFocus": true,
+  "terminal.integrated.windowsEnableConpty": false,
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.enableAppInsights": false,
+  "editor.scrollbar.verticalScrollbarSize": 0,
+  "editor.scrollbar.horizontalScrollbarSize": 0,
+  "editor.scrollbar.vertical": "hidden",
+  "diffEditor.codeLens": true,
+  "editor.accessibilitySupport": "off",
+  "editor.accessibilityPageSize": 1,
+  "editor.hideCursorInOverviewRuler": true,
+  "vim.neovimPath": "/opt/homebrew/bin/nvim",
+  "vim.scroll": 10,
+  "vim.normalModeKeyBindings": [
+    {
+      "before": [
+        "<C-k>"
+      ],
+      "commands": [
+        "workbench.action.nextEditor"
+      ]
+    },
+    {
+      "before": [
+        "<C-j>"
+      ],
+      "commands": [
+        "workbench.action.previousEditor"
+      ]
+    },
+  ],
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "<C-i>"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    },
+  ],
+  "workbench.panel.opensMaximized": "never",
+  "explorer.autoReveal": false,
+  "terminal.external.linuxExec": "iTerm",
+  "terminal.external.osxExec": "iTerm.app",
+  "terminal.integrated.cursorBlinking": true,
+  "explorer.decorations.badges": false,
+  "editor.cursorBlinking": "solid",
+  "workbench.preferredDarkColorTheme": "Ayu Mirage Bordered",
+  "workbench.preferredLightColorTheme": "Gruvbox Light Hard",
+  "workbench.iconTheme": "ayu",
+  "synthwave84.disableGlow": true,
+  "files.associations": {
+    "**/*.html": "html",
+    "**/templates/**/*.html": "django-html",
+    "**/templates/**/*": "django-txt",
+    "**/requirements{/**,*}.{txt,in}": "pip-requirements"
+  },
+  "emmet.includeLanguages": {
+    "django-html": "html"
+  },
+  "python.autoComplete.addBrackets": true,
+  "editor.formatOnSave": true,
+  "html.format.endWithNewline": true,
+  "git.ignoreLimitWarning": true,
+  "terminal.integrated.confirmOnExit": "always",
+  "python.logging.level": "off",
+  "python.linting.banditEnabled": true,
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": false,
+  "editor.minimap.showSlider": "always",
+  "editor.minimap.scale": 3,
+  "editor.fontSize": 15,
+  "kite.showWelcomeNotificationOnStartup": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "python.analysis.completeFunctionParens": true,
+  "bracket-pair-colorizer-2.showVerticalScopeLine": false,
+  "bracket-pair-colorizer-2.scopeLineRelativePosition": false,
+  "bracket-pair-colorizer-2.showHorizontalScopeLine": false,
+  "editor.renderLineHighlight": "none",
+  "code-runner.runInTerminal": true,
+  "editor.definitionLinkOpensInPeek": true,
+  "editor.padding.bottom": 300,
+  "explorer.decorations.colors": false,
+  "editor.codeLens": false,
+  "editor.highlightActiveIndentGuide": false,
+  "editor.linkedEditing": true,
+  "editor.parameterHints.enabled": false,
+  "kite.completions.disabledFileExtensions": [
+  "**/*.py"
+  ],
+  "workbench.panel.defaultLocation": "right",
+"bracket-pair-colorizer-2.depreciation-notice": false,
+"editor.guides.highlightActiveIndentation": false,
+"workbench.colorTheme": "Night Owl (No Italics)",
+"vim.neovimConfigPath": "~/.config/nvim/init.vim ",
+"vscode-neovim.neovimExecutablePaths.darwin": "/opt/homebrew/bin/nvim",
+"vscode-neovim.neovimInitVimPaths.darwin": "~/.config/nvim/init.vim",
+"vscode-neovim.textDecorationsAtTop": true,
+"workbench.tips.enabled": false,
+"workbench.tree.indent": 15,
+"workbench.tree.renderIndentGuides": "none",
+"editor.guides.bracketPairsHorizontal": false,
+"editor.guides.highlightActiveBracketPair": false,
+"extensions.ignoreRecommendations": true,
+"window.titleBarStyle": "native",
+"audioCues.lineHasBreakpoint": "off",
+"audioCues.lineHasError": "off",
+"audioCues.lineHasFoldedArea": "off",
+"audioCues.lineHasInlineSuggestion": "off",
+"audioCues.noInlayHints": "off",
+"audioCues.onDebugBreak": "off",
+"workbench.editor.titleScrollbarSizing": "large",
+"workbench.enableExperiments": false,
+"terminal.integrated.tabs.showActiveTerminal": "never",
+"terminal.integrated.tabs.location": "left",
+"terminal.integrated.tabs.enabled": false,
+"terminal.integrated.fontSize": 14,
+"editor.colorDecorators": false,
+"editor.glyphMargin": false,
+"editor.overviewRulerBorder": false,
+"editor.occurrencesHighlight": false,
+"editor.parameterHints.cycle": true,
+"editor.scrollbar.horizontal": "hidden",
+"editor.scrollBeyondLastLine": false,
+"editor.smoothScrolling": true,
+"workbench.editor.decorations.badges": false,
+"editor.minimap.enabled": false,
+"terminal.integrated.lineHeight": 1.1,
+"workbench.activityBar.visible": false,
+}
