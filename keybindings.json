@@ -2,7 +2,7 @@
 [
     // Terminal settings
     {
-        "key": "ctrl+cmd+;",
+        "key": "ctrl+alt+;",
         "command": "workbench.action.terminal.toggleTerminal"
     },
     {
@@ -39,42 +39,42 @@
         "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
     },
     {
-        "key": "ctrl+cmd+h",
+        "key": "ctrl+alt+h",
         "command": "workbench.action.terminal.resizePaneLeft",
         "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
     },
     {
-        "key": "ctrl+cmd+left",
+        "key": "ctrl+alt+left",
         "command": "-workbench.action.terminal.resizePaneLeft",
         "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
     },
     {
-        "key": "ctrl+cmd+k",
+        "key": "ctrl+alt+k",
         "command": "workbench.action.terminal.resizePaneUp",
         "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
     },
     {
-        "key": "ctrl+cmd+up",
+        "key": "ctrl+alt+up",
         "command": "-workbench.action.terminal.resizePaneUp",
         "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
     },
     {
-        "key": "ctrl+cmd+j",
+        "key": "ctrl+alt+j",
         "command": "workbench.action.terminal.resizePaneDown",
         "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
     },
     {
-        "key": "ctrl+cmd+down",
+        "key": "ctrl+alt+down",
         "command": "-workbench.action.terminal.resizePaneDown",
         "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
     },
     {
-        "key": "ctrl+cmd+l",
+        "key": "ctrl+alt+l",
         "command": "workbench.action.terminal.resizePaneRight",
         "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
     },
     {
-        "key": "ctrl+cmd+right",
+        "key": "ctrl+alt+right",
         "command": "-workbench.action.terminal.resizePaneRight",
         "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
     },
@@ -106,13 +106,13 @@
         "command": "workbench.action.selectTheme"
     },
     {
-        "key": "ctrl+q c",
-        "command": "workbench.action.closePanel"
-    },
-    {
-        "key": "ctrl+q g",
+        "key": "ctrl+m",
         "command": "editor.action.revealDefinition",
         "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+    {
+        "key": "ctrl+,",
+        "command": "workbench.action.navigateBack",
     },
     {
         "key": "f12",
@@ -140,5 +140,38 @@
     {
         "key": "ctrl+q e",
         "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "-workbench.action.quickOpen"
+    },
+    {
+        "key": "alt+[Comma]",
+        "command": "workbench.action.openGlobalSettings"
+    },
+
+    // On/off git annotations
+    {
+        "key": "ctrl+q a",
+        "command": "gitlens.toggleLineBlame"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "-workbench.action.quickOpen"
+    },
+    {
+        "key": "ctrl+q w",
+        "command": "workbench.action.files.openFile",
+        "when": "true"
+    },
+    {
+        "key": "ctrl+o",
+        "command": "-workbench.action.files.openFile",
+        "when": "true"
+    },
+    {
+        "key": "ctrl+f",
+        "command": "-workbench.action.terminal.focusFind",
+        "when": "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
     },
 ]

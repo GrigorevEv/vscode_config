@@ -12,11 +12,7 @@
   "editor.renderLineHighlightOnlyWhenFocus": true,
   "terminal.integrated.windowsEnableConpty": false,
   "terminal.integrated.defaultProfile.osx": "zsh",
-  "terminal.enableAppInsights": false,
-  "editor.scrollbar.verticalScrollbarSize": 0,
-  "editor.scrollbar.horizontalScrollbarSize": 0,
-  "editor.scrollbar.vertical": "hidden",
-  "diffEditor.codeLens": true,
+  "editor.scrollbar.verticalScrollbarSize": 12,
   "editor.accessibilitySupport": "off",
   "editor.accessibilityPageSize": 1,
   "editor.hideCursorInOverviewRuler": true,
@@ -55,12 +51,10 @@
   "terminal.external.linuxExec": "iTerm",
   "terminal.external.osxExec": "iTerm.app",
   "terminal.integrated.cursorBlinking": true,
-  "explorer.decorations.badges": false,
   "editor.cursorBlinking": "solid",
   "workbench.preferredDarkColorTheme": "Ayu Mirage Bordered",
   "workbench.preferredLightColorTheme": "Gruvbox Light Hard",
   "workbench.iconTheme": "ayu",
-  "synthwave84.disableGlow": true,
   "files.associations": {
     "**/*.html": "html",
     "**/templates/**/*.html": "django-html",
@@ -70,19 +64,13 @@
   "emmet.includeLanguages": {
     "django-html": "html"
   },
-  "python.autoComplete.addBrackets": true,
-  "editor.formatOnSave": true,
   "html.format.endWithNewline": true,
   "git.ignoreLimitWarning": true,
   "terminal.integrated.confirmOnExit": "always",
   "python.logging.level": "off",
-  "python.linting.banditEnabled": true,
-  "python.linting.enabled": true,
   "python.linting.pylintEnabled": false,
   "editor.minimap.showSlider": "always",
   "editor.minimap.scale": 3,
-  "editor.fontSize": 15,
-  "kite.showWelcomeNotificationOnStartup": false,
   "[javascript]": {
     "editor.defaultFormatter": "HookyQR.beautify"
   },
@@ -94,26 +82,14 @@
   "bracket-pair-colorizer-2.scopeLineRelativePosition": false,
   "bracket-pair-colorizer-2.showHorizontalScopeLine": false,
   "editor.renderLineHighlight": "none",
-  "code-runner.runInTerminal": true,
   "editor.definitionLinkOpensInPeek": true,
   "editor.padding.bottom": 300,
-  "explorer.decorations.colors": false,
-  "editor.codeLens": false,
-  "editor.highlightActiveIndentGuide": false,
   "editor.linkedEditing": true,
   "editor.parameterHints.enabled": false,
-  "kite.completions.disabledFileExtensions": [
-  "**/*.py"
-  ],
   "workbench.panel.defaultLocation": "right",
 "bracket-pair-colorizer-2.depreciation-notice": false,
 "editor.guides.highlightActiveIndentation": false,
-"workbench.colorTheme": "Night Owl (No Italics)",
 "vim.neovimConfigPath": "~/.config/nvim/init.vim ",
-"vscode-neovim.neovimExecutablePaths.darwin": "/opt/homebrew/bin/nvim",
-"vscode-neovim.neovimInitVimPaths.darwin": "~/.config/nvim/init.vim",
-"vscode-neovim.textDecorationsAtTop": true,
-"workbench.tips.enabled": false,
 "workbench.tree.indent": 15,
 "workbench.tree.renderIndentGuides": "none",
 "editor.guides.bracketPairsHorizontal": false,
@@ -126,22 +102,134 @@
 "audioCues.lineHasInlineSuggestion": "off",
 "audioCues.noInlayHints": "off",
 "audioCues.onDebugBreak": "off",
-"workbench.editor.titleScrollbarSizing": "large",
 "workbench.enableExperiments": false,
 "terminal.integrated.tabs.showActiveTerminal": "never",
 "terminal.integrated.tabs.location": "left",
 "terminal.integrated.tabs.enabled": false,
 "terminal.integrated.fontSize": 14,
-"editor.colorDecorators": false,
-"editor.glyphMargin": false,
-"editor.overviewRulerBorder": false,
 "editor.occurrencesHighlight": false,
 "editor.parameterHints.cycle": true,
-"editor.scrollbar.horizontal": "hidden",
 "editor.scrollBeyondLastLine": false,
 "editor.smoothScrolling": true,
-"workbench.editor.decorations.badges": false,
 "editor.minimap.enabled": false,
 "terminal.integrated.lineHeight": 1.1,
-"workbench.activityBar.visible": false,
+"workbench.colorTheme": "One Dark Pro Darker",
+
+// Deploy
+"deploy.reloaded": {
+    "targets": [
+        {
+            "type": "sftp",
+            "name": "vostok_140",
+            "description": "",
+
+            "dir": "/var/vostok5",
+            "host": "192.168.2.140", "port": 22,
+            "user": "root", "password": "abc",
+            "modes": {"/**/*.py": 777,}
+        },
+        {
+            "type": "sftp",
+            "name": "vostok_141",
+            "description": "",
+
+            "dir": "/var/vostok5",
+            "host": "192.168.2.141", "port": 22,
+            "user": "root", "password": "abc",
+            "modes": {"/**/*.py": 777,}
+        },
+        {
+            "type": "sftp",
+            "name": "engine_140",
+            "description": "",
+
+            "dir": "/",
+            "host": "192.168.2.140",
+            "port": 22,
+            "user": "root",
+            "user": "root", "password": "abc",
+            "modes": {"/**/*.py": 777,}
+        },
+        {
+            "type": "sftp",
+            "name": "engine_141",
+            "description": "",
+
+            "dir": "/",
+            "host": "192.168.2.141", "port": 22,
+            "user": "root", "password": "abc",
+            "modes": {"/**/*.py": 777,}
+        },
+        {
+            "type": "sftp",
+            "name": "192.168.2.70",
+            "description": "",
+
+            "dir": "/",
+            "host": "192.168.2.70", "port": 22,
+            "user": "root", "password": "abc",
+            "modes": {"/**/*.py": 777,}
+        },
+        {
+            "type": "sftp",
+            "name": "192.168.2.71",
+            "description": "",
+
+            "dir": "/",
+            "host": "192.168.2.71", "port": 22,
+            "user": "root", "password": "abc",
+            "modes": {"/**/*.py": 777,}
+        },
+        {
+            "type": "sftp",
+            "name": "192.168.3.30",
+            "description": "",
+
+            "dir": "/",
+            "host": "192.168.3.30", "port": 22,
+            "user": "root", "password": "abc",
+            "modes": {"/**/*.py": 777,}
+        },
+        {
+            "type": "sftp",
+            "name": "192.168.3.31",
+            "description": "",
+
+            "dir": "/",
+            "host": "192.168.3.31", "port": 22,
+            "user": "root", "password": "abc",
+            "modes": {"/**/*.py": 777,}
+        },
+    ]
+  },
+  "terminal.integrated.fontFamily": "monospace",
+  "files.insertFinalNewline": true,
+  "editor.fastScrollSensitivity": 515,
+  "python.linting.flake8Enabled": true,
+  "python.formatting.provider": "none",
+  "editor.formatOnPaste": true,
+  "vim.autoSwitchInputMethod.enable": true,
+  "vim.autoSwitchInputMethod.defaultIM": "xkb:us::eng",
+  "vim.autoSwitchInputMethod.obtainIMCmd": "/usr/bin/ibus engine",
+  "vim.autoSwitchInputMethod.switchIMCmd": "/usr/bin/ibus engine {im}",
+  "files.trimTrailingWhitespace": true,
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "python.analysis.autoImportCompletions": false,
+  "explorer.confirmDragAndDrop": false,
+  "workbench.trustedDomains.promptInTrustedWorkspace": true,
+  "debug.terminal.clearBeforeReusing": true,
+  "debug.allowBreakpointsEverywhere": true,
+  "debug.autoExpandLazyVariables": true,
+  "workbench.editor.autoLockGroups": {
+    "mainThreadWebview-markdown.preview": true
+  },
+  "workbench.editor.decorations.badges": false,
+  "workbench.editor.sharedViewState": true,
+  "explorer.decorations.badges": false,
+  "debug.showBreakpointsInOverviewRuler": true,
+  "workbench.tips.enabled": false,
+  "diffEditor.codeLens": true,
+  "editor.codeLens": false,
+  "editor.colorDecorators": false,
+  "workbench.activityBar.visible": false
 }
